@@ -1,0 +1,7 @@
+versions:
+  - rubocop
+  - rubocop-rails
+  - rubocop-minitest
+  - rubocop-performance
+  - rubocop-rspec
+rubocop_config_path: ".rubocop.yml"

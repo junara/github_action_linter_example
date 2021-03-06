@@ -1,0 +1,30 @@
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+AllCops:
+  NewCops: enable # rubocopの新機能をactiveにする
+  Exclude:
+    - 'Gemfile'
+    - 'log/**/*'
+    - 'spec/**/*'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'assets/**/*'
+    - 'node_modules/**/*'
