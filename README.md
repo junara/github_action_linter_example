@@ -41,7 +41,7 @@ rubocop_config_path: ".rubocop.yml"
 
 `.rubocop.yml` に設定を書きます。ここでは個人的にオススメの使わない方がよさそうな 条件をfalseにしています。
 
-```
+```.rubocop.yml
 Style/AsciiComments:
   Enabled: false
 
