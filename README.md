@@ -73,3 +73,47 @@ AllCops:
     - 'assets/**/*'
     - 'node_modules/**/*'
 ```
+
+# Test
+
+下記のRubyスクリプトを作成して pull requestを作成する。
+
+`kadai/test_1.rb`
+
+```kadai/test_1.rb
+class Meat
+  def initialize(nome)
+    @name = name
+  end
+
+  def bite(num)
+    "#{@name}kamu"*num
+  end
+end
+
+Meat.new('butaniku').bite(2)
+#=> "butanikukamubutanikukamu"
+```
+
+Pull Requestを見ると赤文字でエラーが検出されます。
+
+これを修正します。
+
+修正結果は以下の通りです。
+
+```kadai/test_1.rb
+class Meat
+  def initialize(name)
+    @name = name
+  end
+
+  def bite(num)
+    "#{@name}kamu" * num
+  end
+end
+
+Meat.new('butaniku').bite(2)
+#=> "butanikukamubutanikukamu"
+```
+
+緑色の状態になります。
